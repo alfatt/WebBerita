@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilai Akhir Mahasiswa</title>
+</head>
+<body>
+    <form action="" name="formNilai">
+        <label for="">Nilai Quiz :</label>
+        <input type="number" name="nilaiQuiz"><br>
+        <label for="">Nilai Tugas :</label>
+        <input type="number" name="nilaiTugas"><br>
+        <label for="">Nilai UTS :</label>
+        <input type="number" name="nilaiUts"><br>
+        <label for="">Nilai UAS :</label>
+        <input type="number" name="nilaiUas">
+        <hr>
+        <label for="">Hasil Grade :</label>
+        <input type="text" name="hasilIp" disabled><br>
+        <label for="">Keterangan :</label>
+        <input type="text" name="ketNilai" disabled>
+        <button class="btn btn-success" value="Hitung" onclick="hitungNilai()">Hitung</button>
+        <button class="btn btn-primary" type="reset">Reset</button>
+    </form>
+    <script>
+        function hitungNilai(){
+            var quiz=parseFloat(document.formNilai.nilaiQuiz.value);
+            var tugas=parseFloat(document.formNilai.nilaiTugas.value);
+            var uts=parseFloat(document.formNilai.nilaiUts.value);
+            var uas=parseFloat(document.formNilai.nilaiUas.value);
+            var ip="";
+            var ket="";
+            var nilai_akhir=((0.1*quiz)+(0.2*tugas)+(0.3*uts)+(0.4*uas));
+
+            if(nilai_akhir>=85){
+                ip='Grade A';
+                ket='Nilai Sangat Memuaskan dan Baik';
+            }else if(nilai_akhir>=73){
+                ip='Grade B';
+                ket='Nilai Sangat Memuaskan dan Baik';
+            }else if(nilai_akhir>=65){
+                ip='Grade B';
+                ket='Nilai Cukup Baik';
+            }else if(nilai_akhir>=50){
+                ip='Grade B';
+                ket='Kamu Harus Ulang';
+            }else{
+                ip='Grade E';
+                ket='Kamu DO Tahun Depan';
+            }
+            alert(ip+''+ket)
+            document.formNilai.hasilIp.value=ip
+            document.formNilai.ketNilai.value=ip
+        }
+    </script>
+    
+</body>
+</html>

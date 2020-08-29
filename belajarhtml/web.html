@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            
+        }
+        .bungkus{
+            background: deepskyblue;
+            /* width: 900px; */
+            
+        }
+        /* bagian atas */
+        .bungkus .atas{
+            background: salmon;
+            height: 50px;
+            padding: 20px 30px;
+            color: white;
+        }
+        /* bagian menu */
+        .bungkus .menu{
+            background: rosybrown;
+        }
+        .bungkus .menu ul{
+            padding: 0;
+            margin: 0;
+            background: slategray;
+            overflow: hidden;
+            text-decoration: none;
+        }
+        .bungkus .menu ul li{
+            float: left;
+            list-style-type: none;
+            padding: 10px;
+        }
+        .bungkus .menu ul li a{
+            color: snow;
+            text-decoration: none;
+        }
+        .clear{
+            clear: both;
+        }
+        .tengah{
+            height: 450px;
+        }
+        .bungkus .tengah .menusamping{
+            background: aqua;
+            float: left;
+            width: 25%;
+            height: 100%;
+        }
+        .bungkus .tengah .menusamping ul li a{
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        .bungkus .tengah .konten{
+            background: azure;
+            float: left;
+            height: 100%;
+            width: 75%;
+        }
+        .bungkus .kaki{
+            width: 100%;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bungkus">
+        <div class="atas">
+            <h1>Mulai Ngoding</h1>
+            <p>Tutorial memulai website sederhana</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">PHP</a></li>
+                <li><a href="">Javascript</a></li>
+            </ul>
+        </div>
+        <div class="tengah">
+            <div class="menusamping">
+                <ul>
+                    <li><a href="">Tutorial HTML Dasar</a></li>
+                    <li><a href="">Tutorial CSS Dasar</a></li>
+                    <li><a href="">Tutorial PHP Dasar</a></li>
+                    <li><a href="">Tutorial JQuery Dasar</a></li>
+                </ul>
+            </div>
+            <div class="konten">
+                isi
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="kaki"></div>
+    </div>
+</body>
+</html>

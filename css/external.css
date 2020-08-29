@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+
+}
+h1{
+    color: white;background-color: deepskyblue; padding: 20px; text-align: center;
+}
+
+ /* ul,li{
+                font-size: 30px;
+            }
+            li:first-child{
+                color: yellow;
+            }
+            li:nth-child(2){
+                color: aquamarine;
+            }
+            li:last-child{
+                color: bisque;
+            } */
+            .label{
+                text-align: center;
+                background-color: deepskyblue ;
+                color:white;
+                font-size: 20px;
+                padding: 5px;
+            }
+            #facebook{
+                /* background-color: dodgerblue; */
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+            }
+            #facebook:hover{
+                /* background-color: violet; */
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 25px;
+            }
+            #instagram{
+                /* background-color: yellow; */
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+            }
+            #instagram:hover{
+                /* background-color: palevioletred; */
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 25px;
+            }
+            #youtube{
+                /* background-color: red; */
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+            }
+            #youtube:hover{
+                /* background-color: tomato; */
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 25px;
+            }
+footer{
+    background-color: deepskyblue;
+}

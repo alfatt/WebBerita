@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Alert</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <center>
+            <h1>OPERATOR ALERT</h1>
+                <button class="btn btn-warning" onclick="tambah()">Tambah</button>
+                <button class="btn btn-danger" onclick="kurang()">Kurang</button>
+                <button class="btn btn-success" onclick="kali()">Kali</button>
+                <button class="btn btn-primary" onclick="bagi()">Bagi</button>
+            <script>
+                var a=10
+                var b=5.2
+                var c=3
+                function tambah() {
+                    alert("Nilai Penjumlahan " + (a+b+c))
+                }
+                function kurang() {
+                    alert("Nilai Pengurangan " + (a-b))
+                }
+                function kali() {
+                    alert("Nilai Perkalian " + (c*a*b))
+                }
+                function bagi() {
+                    alert("Nilai Pembagian " + (a/c))
+                }
+            </script>
+        </center>
+    </div>
+
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>
